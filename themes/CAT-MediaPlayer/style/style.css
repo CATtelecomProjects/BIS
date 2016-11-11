@@ -1,0 +1,153 @@
+FONT		{FONT-FAMILY: Tahoma, Helvetica, sans-serif; FONT-SIZE: 12px}
+TD		{FONT-FAMILY: Tahoma, Helvetica, sans-serif; FONT-SIZE: 12px}
+BODY		{
+	FONT-FAMILY: Tahoma, Helvetica, sans-serif;
+	background-color: #084293;
+	FONT-SIZE: 12px; 
+	word-wrap: break-word; 
+	margin: 0 0 0 0;
+	
+	scrollbar-face-color: #DDDDDD; 
+			scrollbar-highlight-color: #FBF9F9; 
+			scrollbar-shadow-color: #999999; 
+			scrollbar-3dlight-color: #DDDDDD; 
+			scrollbar-arrow-color: #999999; 
+			scrollbar-track-color: #F7F7F7; 
+	        scrollbar-darkshadow-color: #FFFFFF;
+	
+/*	filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#3C4D56', EndColorStr='#6C7A82');
+	border-top: 1px solid #cee4e7;*/
+}
+#tblogo {
+	width: 800px;
+	padding: 5px;
+}
+
+P, td, tr, tbody, table		{FONT-FAMILY: Tahoma, Helvetica, sans-serif; FONT-SIZE: 12px; color
+: #545454;}
+DIV		{FONT-FAMILY: Tahoma, Helvetica, sans-serif; FONT-SIZE: 12px}
+INPUT		{FONT-FAMILY: Tahoma, Helvetica, sans-serif; FONT-SIZE: 12px}
+TEXTAREA	{FONT-FAMILY: Tahoma, Helvetica, sans-serif; FONT-SIZE: 12px}
+FORM 		{FONT-FAMILY: Tahoma, Helvetica, sans-serif; FONT-SIZE: 12px}
+A:link          {BACKGROUND: none; COLOR: #000000; FONT-SIZE: 12px; FONT-FAMILY: Tahoma, Helvetica, sans-serif; TEXT-DECORATION: underline}
+A:active        {BACKGROUND: none; COLOR: #000000; FONT-SIZE: 12px; FONT-FAMILY: Tahoma, Helvetica, sans-serif; TEXT-DECORATION: underline}
+A:visited       {BACKGROUND: none; COLOR: #000000; FONT-SIZE: 12px; FONT-FAMILY: Tahoma, Helvetica, sans-serif; TEXT-DECORATION: underline}
+A:hover         {BACKGROUND: none; COLOR: #0A97B0; FONT-SIZE: 12px; FONT-FAMILY: Tahoma, Helvetica, sans-serif; TEXT-DECORATION: none}
+.title 		{BACKGROUND: none; COLOR: #6A6A6A; FONT-SIZE: 12px; FONT-WEIGHT: bold; FONT-FAMILY: Tahoma, Helvetica, sans-serif; TEXT-DECORATION: none}
+.content 	{BACKGROUND: none; COLOR: #000000; FONT-SIZE: 12px; FONT-FAMILY: Tahoma, Helvetica, sans-serif}
+.storytitle 	{BACKGROUND: none; COLOR: #363636; FONT-SIZE: 14px; FONT-WEIGHT: bold; FONT-FAMILY: Tahoma, Helvetica, sans-serif; TEXT-DECORATION: none}
+.storycat	{BACKGROUND: none; COLOR: #545454; FONT-SIZE: 12px; FONT-WEIGHT: bold; FONT-FAMILY: Tahoma, Helvetica, sans-serif; TEXT-DECORATION: underline}
+.boxtitle 	{BACKGROUND: none; COLOR: #363636; FONT-SIZE: 12px; FONT-WEIGHT: bold; FONT-FAMILY: Tahoma, Helvetica, sans-serif; TEXT-DECORATION: none}
+.boxcontent 	{BACKGROUND: none; COLOR: #545454; FONT-SIZE: 12px; FONT-FAMILY: Tahoma, Helvetica, sans-serif}
+.option 	{BACKGROUND: none; COLOR: #545454; FONT-SIZE: 12px; FONT-WEIGHT: bold; FONT-FAMILY: Tahoma, Helvetica, sans-serif; TEXT-DECORATION: none}
+.tiny		{BACKGROUND: none; COLOR: #545454; FONT-SIZE: 12px; FONT-WEIGHT: normal; FONT-FAMILY: Tahoma, Helvetica, sans-serif; TEXT-DECORATION: none}
+.footmsg        {BACKGROUND: none; COLOR: #545454; FONT-SIZE: 12px; FONT-WEIGHT: normal; FONT-FAMILY: Tahoma, Helvetica, sans-serif; TEXT-DECORATION: none}
+.footmsg_l	{BACKGROUND: none; COLOR: #545454; FONT-SIZE: 12px; FONT-WEIGHT: normal; FONT-FAMILY: Tahoma, Helvetica, sans-serif; TEXT-DECORATION: underline}
+.box		{FONT-FAMILY: Tahoma, Helvetica, sans-serif; FONT-SIZE: 12px; border: 1px solid #6A6A6A; background-color: #FFFFFF}
+.search {
+	FONT-FAMILY: Tahoma, Helvetica, sans-serif; 
+	FONT-SIZE: 11px;
+	border: 0px solid #F0F5F6;
+	background-color: #FFFFFF;
+}
+.linkmenu {
+	font-size: 12px;
+	color: #0F4DA3;
+}
+a.linkmenu:link, a.linkmenu:visited, a.linkmenu:active {
+	font-size: 12px;
+	color: #0F4DA3;
+	text-decoration: none;
+	font-weight: bold;
+}
+a.linkmenu:hover {
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+}
+.title_block {
+	font-size: 20px;
+	color: #018EBC;
+	font-weight: normal;
+	padding-bottom: 8px;
+}
+.title_content {
+	font-size: 13px;
+	font-family: Tahoma, Helvetica, sans-serif; 
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.footer {
+	color: #333;
+	font-family: Tahoma, Helvetica, sans-serif; 
+	font-size: 11px;
+}
+a.footer:link, a.footer:active, a.footer:visited {
+	color: #000000;
+	font-family: Tahoma, Helvetica, sans-serif; 
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+a.footer:hover {
+	color: #000;
+	font-weight: bold;
+	font-size: 11px;
+	text-decoration: none;
+}
+.titlecontent {
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFF;
+	font-family: Tahoma, Helvetica, sans-serif;
+}
+a.titlecontent:link, a.titlecontent:visited, a.titlecontent:active{
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #FFF;
+	font-family: Tahoma, Helvetica, sans-serif;
+}
+a.titlecontent:hover {
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #93E504;
+	font-family: Tahoma, Helvetica, sans-serif;
+}
+.postcom {
+	font-size: 12px;
+	padding-bottom: 2px; 
+	margin-bottom: 5px;
+	color: #0051AD;
+	padding-top: 6px;
+}
+
+.center_block {
+	padding: 3px;
+	background-color: #EDF4FD;
+	border: 1px solid #E1EBF9;
+	padding: 5px;
+}
+
+.headcontent {
+	float: right; 
+	width: 255px; 
+	margin-right: 132px; 
+	margin-top: 80px; 
+	font-family: Tahoma, Helvetica, sans-serif; 
+	color: #000;
+}
+.fontcontent {
+	font-size: 16px;
+	font-weight: bold;
+	color: #218d00;
+}
+
+/* Background images for tables */
+.tbl{border-collapse:collapse;height:4px;width:100%}
+.tbll{background: url(images/tb4_l.gif) no-repeat;width:8px}
+.tblbot{background: url(images/tb4_m.gif) repeat-x;width:100%}
+.tblr{background: url(images/tb4_r.gif) no-repeat;width:8px}
+.tbl80{border-collapse:collapse;height:4px;width:80%}

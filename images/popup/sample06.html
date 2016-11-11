@@ -1,0 +1,117 @@
+<html>
+
+<head>
+	<link rel='stylesheet' href='sample.css' type='text/css'>
+	<title>DHTML Popups Sample 06</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-874"><style type="text/css">
+<!--
+body {
+	background-color: #F60;
+}
+-->
+</style></head>
+<body>
+<h1>DHTML Popups Sample 06</h1>
+
+<style type='text/css'>
+.dragme { cursor: move }
+</style>
+<script type='text/javascript'>
+var ie = document.all;
+var nn6 = document.getElementById &&! document.all;
+
+var isdrag = false;
+var x, y;
+var dobj;
+
+function movemouse( e ) {
+  if( isdrag ) {
+    dobj.style.left = nn6 ? tx + e.clientX - x : tx + event.clientX - x;
+    dobj.style.top  = nn6 ? ty + e.clientY - y : ty + event.clientY - y;
+    return false;
+  }
+}
+
+function selectmouse( e ) {
+  var fobj       = nn6 ? e.target : event.srcElement;
+  var topelement = nn6 ? "HTML" : "BODY";
+
+  while (fobj.tagName != topelement && fobj.className != "dragme") {
+    fobj = nn6 ? fobj.parentNode : fobj.parentElement;
+  }
+
+  if (fobj.className=="dragme") {
+    isdrag = true;
+    dobj = document.getElementById("styled_popup");
+    tx = parseInt(dobj.style.left+0);
+    ty = parseInt(dobj.style.top+0);
+    x = nn6 ? e.clientX : event.clientX;
+    y = nn6 ? e.clientY : event.clientY;
+    document.onmousemove=movemouse;
+    return false;
+  }
+}
+
+function styledPopupClose() {
+  document.getElementById("styled_popup").style.display = "none";
+}
+
+document.onmousedown=selectmouse;
+document.onmouseup=new Function("isdrag=false");
+</script>
+
+<div id='styled_popup' name='styled_popup' style='width: 380px; height: 300px; display: ; position: absolute; top: 250px; left: 450px;'>
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" style="margin: 0 0 10 0">
+  <tr class='dragme'>
+    <td width="1"><img src="images/block_title_01.gif" width="6" height="31" alt="" /></td>
+    <td width="100%" height="30" background="images/block_title_02.gif" class="title_block"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="95%">$title</td>
+          <td width="5%" align="right" valign="top"><img src="images/icon-close.png" width="12" height="12" title="Close Window"  onclick="javascript:styledPopupClose();" style="cursor:pointer"/></td>
+        </tr>
+      </table></td>
+    <td width="1"><img src="images/block_title_04.gif" width="5" height="31" alt="" /></td>
+  </tr>
+  <tr>
+    <td valign="top" background="images/block_title_05.gif"><img src="images/block_title_05.gif" width="6" height="2" alt="" /></td>
+    <td width="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+      <tr>
+        <td width="3%" height="21">&nbsp;</td>
+        <td colspan="2">เรียนผู้ใช้ระบบงาน BIS ทุกท่าน</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td width="3%">&nbsp;</td>
+        <td width="94%">เนื่องจากระบบงาน BIS กำลังอยู่ในช่วงการปรับปรุง Server ทำให้ไม่สามารถใช้งานได้<br />
+          <br />
+          ขออภัยในความไม่สะดวกมา ณ ที่นี้ด้วย<br />
+          <br />
+          จึงเรียนมาเพื่อโปรดทราบ<br />
+          <br /></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2">จาก ผู้พัฒนาระบบงาน BIS</td>
+      </tr>
+      <tr>
+        <td colspan="3" align="center">&nbsp;</td>
+      </tr>
+      </table></td>
+    <td valign="top" background="images/block_title_07.gif" ><img src="images/block_title_07.gif" width="5" height="2" alt="" /></td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="images/block_title_10.gif" width="6" height="7" alt="" /></td>
+    <td width="100%" background="images/block_title_11.gif"><img src="images/block_title_11.gif" width="2" height="7" alt="" /></td>
+    <td valign="top"><img src="images/block_title_12.gif" width="5" height="7" alt="" /></td>
+  </tr>
+</table>
+</div>
+<input type='submit' onClick='document.getElementById("styled_popup").style.display="block"' value=' Fire! '>
+
+<p>
+<a href='http://dhtmlpopups.webarticles.org/'>DHTML Popups</a><br>
+<a href='http://dhtmlpopups.webarticles.org/'>http://dhtmlPopups.webarticles.org/</a><br>
+Copyright &copy; 2006 Ciprian Dosoftei.
+</p>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>Font Sizer DX Information</title>
+<style type="text/css">
+/* hide from incapable browsers */
+#sizer { display:none } 
+</style>
+<script src="js/dw_cookies.js" type="text/javascript"></script>
+<script src="js/dw_sizerdx.js" type="text/javascript"></script>
+</head>
+<body>
+
+<h1>Font Sizer DX: Information</h1>
+
+<div id="sizer">
+    <a href="" onclick="dw_fontSizerDX.adjust(2); return false" title="Increase font-size"
+    ><img src="images/plus.gif" width="20" height="20" alt="" border="0"></a>
+    <a href="" onclick="dw_fontSizerDX.adjust(-2); return false" title="Decrease font-size"
+    ><img src="images/minus.gif" width="20" height="20" alt="" border="0"></a>
+    <a href="" onclick="dw_fontSizerDX.reset(); return false" title="Restore default font-sizes"
+    ><img src="images/reset.gif" width="20" height="20" alt="" border="0"></a>
+</div>
+
+<p>The current document contains the minimum for code setup, i.e., script tags for the two JavaScript files, the sizer links, and an init function call. For most uses you will want to include calls to <code>setDefaults</code> and <code>set</code> methods to tell the code what portions of your document you want affected (or excluded) when users click the links.</p>
+
+<p>Using the set methods you can instruct the code to:</p>
+
+<ul>
+    <li>allow all text to be resized, regardless of styles sheets or font tags, or</li>
+    <li>allow text resize in only a few specific portions of a document's layout, or</li>
+    <li>exclude specific portions of a document from text resize.</li>
+</ul>
+
+<p>View the source code of this document and scroll to the bottom to see example uses of these methods in place, but commented out. More <a href="http://www.dyn-web.com/dhtml/sizefont/">information</a> about the code, <a href="http://www.dyn-web.com/dhtml/sizefont/sizerdx.html">instructions</a> for setup and additional <a href="http://www.dyn-web.com/dhtml/sizefont/sizerdx.html#examples">examples</a> are available online.  Assistance in implementing the code is available to <a href="http://www.dyn-web.com/bus/purchase.html">licensed users</a>.</p>
+
+<p>The code is set up with a few defaults in the dw_sizerdx.js file: </p>
+
+<pre>
+    sizeUnit:    'px',
+    defaultSize: 14,
+    maxSize:     24,
+    minSize:     10,
+</pre>
+
+<p>You can change these settings there if you like but more often they will be changed using the <code>setDefaults</code> method, for example:</p>
+
+<pre>
+// setDefaults arguments: size unit, default size, minimum, maximum
+// optional array of elements or selectors to apply these defaults to
+dw_fontSizerDX.setDefaults('px', 12, 9, 32, ['table#main'] );
+</pre>
+
+<p>Please read dyn-web's <a href="http://www.dyn-web.com/bus/terms.html">Terms of Use</a> if you plan to use our code.</p>
+
+<p><a href="http://www.dyn-web.com">www.dyn-web.com</a></p>
+
+
+<script type="text/javascript">
+/*************************************************************************
+    This code is from Dynamic Web Coding at dyn-web.com
+    Copyright 2004-5 by Sharon Paine 
+    See Terms of Use at www.dyn-web.com/bus/terms.html
+    regarding conditions under which you may use this code.
+    This notice must be retained in the code as is!
+*************************************************************************/
+
+// setDefaults arguments: size unit, default size, minimum, maximum
+// optional array of elements or selectors to apply these defaults to
+//dw_fontSizerDX.setDefaults("px", 14, 9, 32, ['div#content'] );
+
+// set arguments: default size, minimum, maximum
+// array of elements or selectors to apply these settings to
+//dw_fontSizerDX.set(12, 9, 18, ['div.sidebar'] );
+
+dw_fontSizerDX.init();
+</script>
+</body>
+</html>

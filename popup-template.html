@@ -1,0 +1,123 @@
+<style type='text/css'>
+.dragme {
+	cursor: move
+}
+
+.textBold {
+	font-family:Tahoma, Geneva, sans-serif;
+	color:red;
+	font-weight:bold;
+	font-size:12px;	
+}
+
+.textContent {
+	font-family:Tahoma, Geneva, sans-serif;
+	color:#039;
+	font-weight:normal;
+	font-size:12px;	
+}
+
+
+body,td,th {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+}
+
+</style>
+<script type='text/javascript'>
+var ie = document.all;
+var nn6 = document.getElementById &&! document.all;
+
+var isdrag = false;
+var x, y;
+var dobj;
+
+function movemouse( e ) {
+  if( isdrag ) {
+    dobj.style.left = nn6 ? tx + e.clientX - x : tx + event.clientX - x;
+    dobj.style.top  = nn6 ? ty + e.clientY - y : ty + event.clientY - y;
+    return false;
+  }
+}
+
+function selectmouse( e ) {
+  var fobj       = nn6 ? e.target : event.srcElement;
+  var topelement = nn6 ? "HTML" : "BODY";
+
+  while (fobj.tagName != topelement && fobj.className != "dragme") {
+    fobj = nn6 ? fobj.parentNode : fobj.parentElement;
+  }
+
+  if (fobj.className=="dragme") {
+    isdrag = true;
+    dobj = document.getElementById("styled_popup");
+    tx = parseInt(dobj.style.left+0);
+    ty = parseInt(dobj.style.top+0);
+    x = nn6 ? e.clientX : event.clientX;
+    y = nn6 ? e.clientY : event.clientY;
+    document.onmousemove=movemouse;
+    return false;
+  }
+}
+
+function styledPopupClose() {
+  document.getElementById("styled_popup").style.display = "none";
+}
+
+document.onmousedown=selectmouse;
+document.onmouseup=new Function("isdrag=false");
+</script>
+<div id='styled_popup' name='styled_popup' style='width: 380px; height: 300px; display: ; position: absolute; top: 250px; left: 450px;'>
+  <table width="100%"  border="0" cellpadding="0" cellspacing="0" style="margin: 0 0 10 0">
+    <tr class='dragme'>
+      <td width="1"><img src="images/popup/block_title_01.gif" width="6" height="31" alt="" /></td>
+      <td width="100%" height="30" background="images/popup/block_title_02.gif" class="title_block"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="95%" class="textBold"><b>ประกาศ !!</b></td>
+            <td width="5%" align="right" valign="top"><img src="images/popup/icon-close.png" width="12" height="12" title="Close Window"  onclick="javascript:styledPopupClose();" style="cursor:pointer"/></td>
+          </tr>
+        </table></td>
+      <td width="1"><img src="images/popup/block_title_04.gif" width="5" height="31" alt="" /></td>
+    </tr>
+    <tr>
+      <td valign="top" background="images/popup/block_title_05.gif"><img src="images/popup/block_title_05.gif" width="6" height="2" alt="" /></td>
+      <td width="100%"><table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+          <tr>
+            <td width="3%" height="21">&nbsp;</td>
+            <td colspan="2"><span class="textContent"><b>เรียนผู้ใช้ระบบงาน BIS ทุกท่าน</b></span></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td width="6%">&nbsp;</td>
+            <td width="91%"><span class="textContent">เนื่องด้วย วันอังคาร ที่ <span style="color:#F00"> <b> 4 พ.ค. 53</b></span>  ทาง ธท. จะทำการปรับปรุง Server ของระบบ DW/DM ทำให้ไม่สามารถใช้งานระับบฯ ได้แก่ 
+                <br /><span style="color:#F00"> <b>
+                1. BI Report<br />
+                2. DW-Webreport
+               Studio</b></span><br />
+               <br />
+               ส่วนการใช้งานในระบบงานอื่นสามารถใช้งานได้ตามปกติ
+               <br />
+               <br />
+              ขออภัยในความไม่สะดวกมา ณ ที่นี้ด้วย<br />
+              <br />
+              จึงเรียนมาเพื่อโปรดทราบ<br />
+              <br />
+            </span></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td colspan="2"><span class="textContent"><b>จาก ผู้พัฒนาระบบงาน BIS</b></span></td>
+          </tr>
+          <tr>
+            <td colspan="3" align="center">&nbsp;</td>
+          </tr>
+        </table></td>
+      <td valign="top" background="images/popup/block_title_07.gif" ><img src="images/popup/block_title_07.gif" width="5" height="2" alt="" /></td>
+    </tr>
+    <tr>
+      <td valign="top"><img src="images/popup/block_title_10.gif" width="6" height="7" alt="" /></td>
+      <td width="100%" background="images/popup/block_title_11.gif"><img src="images/popup/block_title_11.gif" width="2" height="7" alt="" /></td>
+      <td valign="top"><img src="images/popup/block_title_12.gif" width="5" height="7" alt="" /></td>
+    </tr>
+  </table>
+</div>

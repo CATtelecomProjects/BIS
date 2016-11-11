@@ -1,0 +1,165 @@
+<?php
+/**
+ * SAML 2.0 remote IdP metadata for simpleSAMLphp.
+ *
+ * Remember to remove the IdPs you don't use from this file.
+ *
+ * See: https://rnd.feide.no/content/idp-remote-metadata-reference
+ */
+
+/*
+ * Guest IdP. allows users to sign up and register. Great for testing!
+ */
+$metadata['https://openidp.feide.no'] = array(
+	'name' => array(
+		'en' => 'Feide OpenIdP - guest users',
+		'no' => 'Feide Gjestebrukere',
+	),
+	'description'          => 'Here you can login with your account on Feide RnD OpenID. If you do not already have an account on this identity provider, you can create a new one by following the create new account link and follow the instructions.',
+
+	'SingleSignOnService'  => 'https://openidp.feide.no/simplesaml/saml2/idp/SSOService.php',
+	'SingleLogoutService'  => 'https://openidp.feide.no/simplesaml/saml2/idp/SingleLogoutService.php',
+	'certFingerprint'      => 'c9ed4dfb07caf13fc21e0fec1572047eb8a7a4cb'
+);
+
+$metadata['https://idp.testshib.org/idp/shibboleth'] = array (
+  'entityid' => 'https://idp.testshib.org/idp/shibboleth',
+  'metadata-set' => 'saml20-idp-remote',
+  'SingleSignOnService' => 
+  array (
+    0 => 
+    array (
+      'Binding' => 'urn:mace:shibboleth:1.0:profiles:AuthnRequest',
+      'Location' => 'https://idp.testshib.org/idp/profile/Shibboleth/SSO',
+    ),
+    1 => 
+    array (
+      'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
+      'Location' => 'https://idp.testshib.org/idp/profile/SAML2/POST/SSO',
+    ),
+    2 => 
+    array (
+      'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
+      'Location' => 'https://idp.testshib.org/idp/profile/SAML2/Redirect/SSO',
+    ),
+    3 => 
+    array (
+      'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:SOAP',
+      'Location' => 'https://idp.testshib.org/idp/profile/SAML2/SOAP/ECP',
+    ),
+  ),
+  'SingleLogoutService' => 
+  array (
+  ),
+  'ArtifactResolutionService' => 
+  array (
+    0 => 
+    array (
+      'Binding' => 'urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding',
+      'Location' => 'https://idp.testshib.org:8443/idp/profile/SAML1/SOAP/ArtifactResolution',
+      'index' => 1,
+    ),
+    1 => 
+    array (
+      'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:SOAP',
+      'Location' => 'https://idp.testshib.org:8443/idp/profile/SAML2/SOAP/ArtifactResolution',
+      'index' => 2,
+    ),
+  ),
+  'keys' => 
+  array (
+    0 => 
+    array (
+      'encryption' => true,
+      'signing' => true,
+      'type' => 'X509Certificate',
+      'X509Certificate' => '
+MIIEpQIBAAKCAQEA9EvbQiIcl3cLty4hwf+X7Q5bj/9MTzJPfAWHSxZeYQZJj1+G
+xkGGp5tHhBvgha3BB3DU88aFJW9BwegxBZ3OcyHddCswkuYfK2EfXx1bMn6jyZ+v
+W5/dC8oOM6p2faxCS3rSuJ4S4m/M0tA06Sb+jYVIGFDBS0nOttp2FZRkjLpqoCX4
+pWFskxKwPKQqAF+JbTibxve7YXGj3n4vFMsjcg2spA/10sgtBdlh4i+v3B3hGGLM
+3FZH/UDIotI6tVWxKMBt/wHCqW8RRUjKnc+tJb1tVlDgxv6bGVC3kHVVaywhCYAm
+CPrlWdaFNe5gFzNVC5gArQApDfaXGOyO1bZfpwIDAQABAoIBAQC8qlyxjVCRdSG6
+HUl63l7Bd+YkpiCTxSH3gPmEdsj6m3Vx4W9fazmH9Xbcwv65nn/FtFDx1y36xBp/
+m0dItB+9cLjrP3Oq70fBI6eruCs3KvBpBQbTdvmqYihnpE0QL1mfm0Jjy8h/0aHY
+aW2DZlcOipEsHim5cE3Rj5PEhK7Gsqre0yAd1PjUmLjm46bGMWoVq4TYvDltXb1X
+slyg1kDqFhjzfpB3qoLyDMs9KLjwDME59PgdSD96kchtzppDW3lXD9tNK658t2FO
+x6j716wNIY4fHCu499LFbDbXf6PMWaVSlQWpBn7PsDzGtoQNShIEu58ovp+rwzoF
+YNgm8wc5AoGBAPxeXXmn4z2oxckVJoY8RcFWQDP6LCqIs22vpKJgJhFynYA6nLcl
+UdVB5xTcKiue1erW8Bb8p8yUW9z+LKpTnjj3z6K6xb0XqF+PuZJcRHm8rEULqUNN
+2MMsFI5YY4VimqT9H2lzEr1Wik+jKvSPaj+WhoCkzd1hxMx5AG5NoG7jAoGBAPfP
+wYLilDKEyfBgfx+XaEkFwo+BADf5jFyQ3XFQzPql/h2arALGT/HNut5w4cLadvgw
+c8b+aDKM4rM1S4GSdjurbIK1pRAQEI+Y6o2U7nbijo3ERcoWzCqoswcIlS6p1wx6
+YyxjGoeWdF9WXUudkIdlAYmj7ZDHKgnoPf+BA4NtAoGBAKNPxZm2ZT0/fE5122o+
+kr1cPUvldrNHpyUx5o4VPk1IKFgUldmG0v/4F7vOBZQYw0GnOdMGSOgAkbne2bSX
+S+p9ouYhi1ikeJbugR4Pi1hkGe7MbwpY1A7o9Zxv4mcsufpOuwcYKmZQHE0Qv/lm
+3VCs7flNrNK4NAxFuVun7EwVAoGAKsMaBGju48zQP/+W0C/DWh55VWQQUphoZSzG
+WaB0zqfIMvmWxx/LedFjdrEJ9CLYtrk9sVADUP3IvN3sep54cpGBNwj7Q8tR4EWl
+6+qQP8mWidYdqOLINnBH/GW5wISkTE3uQSGU2WLYD/+KN9snroV6f3LfMsV7dpwx
+3p43qf0CgYEAwO4Cx2RDdAxeMOiicgBBaWbeJ6mM8GB/zUvN0FLAPbCa4yf8VFU0
+SE5pLW+36o+uTNzfryzDYhaCRs+evaG5a+6teWmyNbYpSxBOuZU/qpKlv46bX9iV
+qKXuWV2LmyFq4+sofgcRqIvnC384KG5Kl9wJ1tEHWohv/RXAnXRnal0=
+                        ',
+    ),
+  ),
+);
+
+$metadata['http://STRAWBERRY.catintranet.com/adfs/services/trust'] = array (
+  'entityid' => 'http://strawberry.catintranet.com/adfs/services/trust',
+  'contacts' => 
+  array (
+  ),
+  'metadata-set' => 'saml20-idp-remote',
+  'SingleSignOnService' => 
+  array (
+    0 => 
+    array (
+      'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
+      'Location' => 'https://strawberry.catintranet.com/adfs/ls/',
+    ),
+    1 => 
+    array (
+      'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
+      'Location' => 'https://strawberry.catintranet.com/adfs/ls/',
+    ),
+  ),
+  'SingleLogoutService' => 
+  array (
+    0 => 
+    array (
+      'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
+      'Location' => 'https://strawberry.catintranet.com/adfs/ls/',
+    ),
+    1 => 
+    array (
+      'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
+      'Location' => 'https://strawberry.catintranet.com/adfs/ls/',
+    ),
+  ),
+  'ArtifactResolutionService' => 
+  array (
+    0 => 
+    array (
+      'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:SOAP',
+      'Location' => 'https://strawberry.catintranet.com/adfs/services/trust/artifactresolution',
+      'index' => 0,
+    ),
+  ),
+  'keys' => 
+  array (
+    0 => 
+    array (
+      'encryption' => true,
+      'signing' => false,
+      'type' => 'X509Certificate',
+      'X509Certificate' => 'MIIC9jCCAd6gAwIBAgIQGD3hRIw1Z6NGYaTe1t/DAzANBgkqhkiG9w0BAQsFADA3MTUwMwYDVQQDEyxBREZTIEVuY3J5cHRpb24gLSBTVFJBV0JFUlJZLmNhdGludHJhbmV0LmNvbTAeFw0xNDA5MDQxMTE5MTRaFw0xNTA5MDQxMTE5MTRaMDcxNTAzBgNVBAMTLEFERlMgRW5jcnlwdGlvbiAtIFNUUkFXQkVSUlkuY2F0aW50cmFuZXQuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwrpWkH/W4BPtBVtza5XkmNUMtM8RPRqOfjgV406YR4e4rv5ZaSpEd+vhnqyIGXE5n2U+US7UElDiAsm/IkAtNMNCwk+dPZqkYfLPZLS3gLLiFV/NIQ4I2vE8Wmy4GxyVBv39VIZWIwjTYB3BGQag63mgL10V0DCU9Tki9ITo7mofDFr+BccqJqvQi8wgu5x9S9iEvUC3O2t9RaqZP6okcqjF84YqpiqHocUR5tHH7gMVzxqtanOdeyOFCwCLDIq3GyR0dWRP0E60m9XTsdBFyUrRzhx0Cdq9NAkfdfvsP4m2dC79k0LR9koORlE8SyzdfAi4526MKAgirZZYnpgIdwIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQBP5MMqpVoD9epZmtz5EuLd9e3yYcrY1OKqC4rp/ub2OiLeozHze/JbZHDMsSAKpai16bD3gYPtwLsaZ9kONxm27r9lgLmPRCq77NgTzTolSP+yaj9NrYHstrm0mcMwwk/iITUh92coQMKcM1W+AwOlvkpk+rK2JiuC8RT0x2QVYjNuo4s4Nr8uM+dqzg16N20QWdzwdQYsEeImPnCcnMPO3FXqqguTb3xwPbrXjqvL0WiK9NwGkZVdk8p3EdJAg48mF1G7TwkX0aCFA1JUYRbrVGFgOrP4FIs/ZAfdsBtkk8ABLvZd1lKCMMTHbVk9HTi4cGDizqQNrlc1+BxGOvfj',
+    ),
+    1 => 
+    array (
+      'encryption' => false,
+      'signing' => true,
+      'type' => 'X509Certificate',
+      'X509Certificate' => 'MIIC8DCCAdigAwIBAgIQQBKkrGh9EqZOh/U3lPPiZTANBgkqhkiG9w0BAQsFADA0MTIwMAYDVQQDEylBREZTIFNpZ25pbmcgLSBTVFJBV0JFUlJZLmNhdGludHJhbmV0LmNvbTAeFw0xNDA5MDQxMTE5MTJaFw0xNTA5MDQxMTE5MTJaMDQxMjAwBgNVBAMTKUFERlMgU2lnbmluZyAtIFNUUkFXQkVSUlkuY2F0aW50cmFuZXQuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvUmg0MkH8kFoafnqJWAPwhIBGfktmsrqh336rpoh99cDksRl1qJt4XGpIEfFwu5wMylQ1zd1/XCjVLJG29pPmUXUBqC1grU902sYGQsnha0pJD5Y+SaR8fdeU+GbobeM7DWpzBaiW3oQ+7gHA1Pz08fnPl4ozVGANhavqc9osrKvun2Ic5rq2gT0ZtWsdD/iJ2Th2Py2Y3arTDZy1G+bOp1OaIzYEnF4RRQuvi2oEGhWon2uqDZRiEcyoVgYSXWr3ax87MqEMdji0MF4neUYQGNhpMWDC4O56pyK8V0QD00p6qyrZvIIJSBDaeK6KzHHubTM9h/9he3nSfUxFk/uSQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQB+iA2dXGVbxLChC8nk2Zx35wIS4BWRpH8ongGS0mhfGOxoX1Bgbe2MvbA93+e0s8D6Bo0L7v0CAiBfCPf4vgJMFANR/TZiJaNnbGEd3nQK9dPoR7xOKzepKkceemrqONa0EdK4E7k2jBqn8MIVRbpfAc/cKDRIgaajdqwbX5wwvIjypJ1HCY8WAmrT2uMso+hsZh3Gxq29QAbEN3arCK146ZHD4RwYlDMLuL9eQouLV5vCR+dkoVMMC0fx8GzkzgNdfSQ9mt4Es8jvosxL0xbJC2cs2snib8cKqJBTJnhfiZ0524Gh3MqlZtd+V3qK2y5GAbVUB1HxaKFkPR1QI4NV',
+    ),
+  ),
+);

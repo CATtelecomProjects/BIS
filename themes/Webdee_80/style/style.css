@@ -1,0 +1,36 @@
+body{font:12px Tahoma, Verdana,Arial,Helvetica,sans-serif;margin:0px;padding:0;
+scrollbar-3dlight-color:#E9B020;
+scrollbar-arrow-color:#FFFFFF;
+scrollbar-darkshadow-color:#98aab1;
+scrollbar-face-color:#E9B020;
+scrollbar-highlight-color:#ffffff;
+scrollbar-shadow-color:#E9B020;
+scrollbar-track-color:#FFDC83}
+
+FONT		{FONT-FAMILY: Tahoma,Helvetica; FONT-SIZE: 12px}
+TD		{FONT-FAMILY: Tahoma,Helvetica; FONT-SIZE: 12px}
+P		{FONT-FAMILY: Tahoma,Helvetica; FONT-SIZE: 12px}
+DIV		{FONT-FAMILY: Tahoma,Helvetica; FONT-SIZE: 12px}
+INPUT		{FONT-FAMILY: Tahoma,Helvetica; FONT-SIZE: 12px}
+TEXTAREA	{FONT-FAMILY: Tahoma,Helvetica; FONT-SIZE: 12px}
+FORM 		{FONT-FAMILY: Tahoma,Helvetica; FONT-SIZE: 12px}
+SELECT 		{FONT-FAMILY: Tahoma,Helvetica; FONT-SIZE: 12px}
+.selcom		{FONT-FAMILY: Tahoma,Helvetica; FONT-SIZE: 8px}
+A:link          {BACKGROUND: none; COLOR: #000000; FONT-SIZE: 12px; FONT-FAMILY: Tahoma, Helvetica; TEXT-DECORATION: none}
+A:active        {BACKGROUND: none; COLOR: #000000; FONT-SIZE: 12px; FONT-FAMILY: Tahoma, Helvetica; TEXT-DECORATION: none}
+A:visited       {BACKGROUND: none; COLOR: #000000; FONT-SIZE: 12px; FONT-FAMILY: Tahoma, Helvetica; TEXT-DECORATION: none}
+A:hover         {BACKGROUND: none; COLOR: #000CFF; FONT-SIZE: 12px; FONT-FAMILY: Tahoma, Helvetica; TEXT-DECORATION: underline}
+.title 		{BACKGROUND: none; COLOR: #000000; FONT-SIZE: 14px; FONT-WEIGHT: bold; FONT-FAMILY: Tahoma, Helvetica; TEXT-DECORATION: none}
+.subtitle	{font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; color: #FF0000; text-decoration: underline}
+.content 	{BACKGROUND: none; COLOR: #000000; FONT-SIZE: 12px; FONT-FAMILY: Tahoma, Helvetica}
+.storytitle 	{BACKGROUND: none; COLOR: #363636; FONT-SIZE: 14px; FONT-WEIGHT: bold; FONT-FAMILY: Tahoma, Helvetica; TEXT-DECORATION: none}
+.storycat	{font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; color: #999966; text-decoration: none}
+.boxtitle 	{BACKGROUND: none; COLOR: #363636; FONT-SIZE: 12px; FONT-WEIGHT: bold; FONT-FAMILY: Tahoma, Helvetica; TEXT-DECORATION: none}
+.boxcontent 	{BACKGROUND: none; COLOR: #000000; FONT-SIZE: 12px; FONT-FAMILY: Tahoma, Helvetica}
+.option 	{BACKGROUND: none; COLOR: #000000; FONT-SIZE: 13px; FONT-WEIGHT: bold; FONT-FAMILY: Tahoma, Helvetica; TEXT-DECORATION: none}
+.tiny		{BACKGROUND: none; COLOR: #000000; FONT-SIZE: 10px; FONT-WEIGHT: normal; FONT-FAMILY: Tahoma, Helvetica; TEXT-DECORATION: none}
+.tinygrey	{BACKGROUND: none; COLOR: #a3a3a3; FONT-SIZE: 10px; FONT-WEIGHT: normal; FONT-FAMILY: Tahoma, Helvetica; TEXT-DECORATION: none}
+.footmsg        {BACKGROUND: none; COLOR: #62659C; FONT-SIZE: 10px; FONT-WEIGHT: normal; FONT-FAMILY: Tahoma, Helvetica; TEXT-DECORATION: none}
+.footmsg_l	{BACKGROUND: none; COLOR: #62659C; FONT-SIZE: 10px; FONT-WEIGHT: normal; FONT-FAMILY: Tahoma, Helvetica; TEXT-DECORATION: underline}
+.box		{FONT-FAMILY: Tahoma,Helvetica; FONT-SIZE: 11px; border: 1px solid #000000; background-color: #FFFFFF}
+.news_title 	{font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; color: #2696DA}

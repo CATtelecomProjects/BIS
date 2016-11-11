@@ -1,0 +1,128 @@
+FONT		{FONT-FAMILY:  Tahoma, Arial; FONT-SIZE: 12px}
+TD		{FONT-FAMILY:  Tahoma, Arial; FONT-SIZE: 12px}
+BODY		{
+	FONT-FAMILY:  Tahoma, Arial; 
+	FONT-SIZE: 12px; 
+	word-wrap: break-word; 
+	background-color: #3C4D56; 
+	margin: 0 0 0 0;
+	filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#3C4D56', EndColorStr='#6C7A82');
+	border-top: 1px solid #cee4e7;
+
+	padding: 0 10px;
+	scrollbar-3dlight-color:#d1d7dc;
+	scrollbar-arrow-color:#006699;
+	scrollbar-darkshadow-color:#98aab1;
+	scrollbar-face-color:#DDEEDD;
+	scrollbar-highlight-color:#ffffff;
+	scrollbar-shadow-color:#dee3e7;
+	scrollbar-track-color:#efefef}
+}
+P, td, tr, tbody, table		{FONT-FAMILY:  Tahoma, Arial; FONT-SIZE: 12px; color: #666666;}
+DIV		{FONT-FAMILY:  Tahoma, Arial; FONT-SIZE: 12px}
+INPUT		{FONT-FAMILY:  Tahoma, Arial; FONT-SIZE: 12px}
+TEXTAREA	{FONT-FAMILY:  Tahoma, Arial; FONT-SIZE: 12px}
+FORM 		{FONT-FAMILY:  Tahoma, Arial; FONT-SIZE: 12px}
+A:link          {BACKGROUND: none; COLOR: #666666; FONT-SIZE: 12px; FONT-FAMILY:  Tahoma, Arial; TEXT-DECORATION: none}
+A:active        {BACKGROUND: none; COLOR: #666666; FONT-SIZE: 12px; FONT-FAMILY:  Tahoma, Arial; TEXT-DECORATION: none}
+A:visited       {BACKGROUND: none; COLOR: #666666; FONT-SIZE: 12px; FONT-FAMILY:  Tahoma, Arial; TEXT-DECORATION: none}
+A:hover         {BACKGROUND: none; COLOR: #000000; FONT-SIZE: 12px; FONT-FAMILY:  Tahoma, Arial; TEXT-DECORATION: underline}
+.title 		{BACKGROUND: none; COLOR: #666666; FONT-SIZE: 12px; FONT-WEIGHT: bold; FONT-FAMILY:  Tahoma, Arial; TEXT-DECORATION: none}
+.content 	{BACKGROUND: none; COLOR: #666666; FONT-SIZE: 12px; FONT-FAMILY:  Tahoma, Arial}
+.storytitle 	{BACKGROUND: none; COLOR: #363636; FONT-SIZE: 14px; FONT-WEIGHT: bold; FONT-FAMILY:  Tahoma, Arial; TEXT-DECORATION: none}
+.storycat	{BACKGROUND: none; COLOR: #666666; FONT-SIZE: 12px; FONT-WEIGHT: bold; FONT-FAMILY:  Tahoma, Arial; TEXT-DECORATION: underline}
+.boxtitle 	{BACKGROUND: none; COLOR: #363636; FONT-SIZE: 12px; FONT-WEIGHT: bold; FONT-FAMILY:  Tahoma, Arial; TEXT-DECORATION: none}
+.boxcontent 	{BACKGROUND: none; COLOR: #666666; FONT-SIZE: 12px; FONT-FAMILY:  Tahoma, Arial}
+.option 	{BACKGROUND: none; COLOR: #666666; FONT-SIZE: 12px; FONT-WEIGHT: bold; FONT-FAMILY:  Tahoma, Arial; TEXT-DECORATION: none}
+.tiny		{BACKGROUND: none; COLOR: #666666; FONT-SIZE: 12px; FONT-WEIGHT: normal; FONT-FAMILY:  Tahoma, Arial; TEXT-DECORATION: none}
+.footmsg        {BACKGROUND: none; COLOR: #666666; FONT-SIZE: 12px; FONT-WEIGHT: normal; FONT-FAMILY:  Tahoma, Arial; TEXT-DECORATION: none}
+.footmsg_l	{BACKGROUND: none; COLOR: #666666; FONT-SIZE: 12px; FONT-WEIGHT: normal; FONT-FAMILY:  Tahoma, Arial; TEXT-DECORATION: underline}
+.box		{FONT-FAMILY:  Tahoma, Arial; FONT-SIZE: 12px; border: 1px solid #666666; background-color: #FFFFFF}
+.search {
+	FONT-FAMILY:  Tahoma, Arial; 
+	FONT-SIZE: 12px;
+	border: 0px solid #FFFFFF;
+	background-color: #FFFFFF;
+}
+.linkmenu {
+	font-size: 12px;
+	color: #FFFFFF;
+}
+a.linkmenu:link, a.linkmenu:visited, a.linkmenu:active {
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a.linkmenu:hover {
+	font-size: 12px;
+	color: #B2F400;
+	text-decoration: underline;
+}
+.title_block {
+	font-size: 12px;
+	color: #15A700;
+	font-weight: bold;
+	padding-bottom: 6px;
+	padding-left: 5px;
+}
+.footer {
+	color: #FFFFFF;
+	font-size: 12px;
+	padding-bottom: 15px;
+}
+a.footer:link, a.footer:active, a.footer:visited {
+	color: #FFFFFF;
+	font-size: 12px;
+	text-decoration: underline;
+}
+a.footer:hover {
+	color: #BAFF00;
+	font-size: 12px;
+	text-decoration: none;
+}
+.titlecontent {
+	font-size: 12px;
+	font-weight: bold;
+	color: #1A9E00;
+	font-family: Tahoma, "Times New Roman", Times, serif;
+}
+.postcom {
+	font-size: 12px;
+}
+
+
+/* inputs */
+input { 
+	color : #000000;
+	font: normal 11px Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	border-color : #000000;
+	border: solid 1px #2E9524; 
+	background-color : #EEEEEE;
+	background: #E7E7E7 url(../images/bg_postbottom.gif) top left repeat-x;
+	text-indent : 1px; }
+
+input, select { 
+	vertical-align: middle; 
+	box-sizing: content-box;
+	-moz-box-sizing: content-box;
+}
+textarea {
+	box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	width:100%;
+}
+
+input, textarea, select { 
+	color: #333; 
+	font: normal 12px Tahoma, Arial, Helvetica, sans-serif; 
+	vertical-align: middle;
+	margin: 0;
+	box-sizing: content-box;
+	-moz-box-sizing: content-box;
+}
+/* Background images for tables */
+.tbl{border-collapse:collapse;height:4px;width:100%}
+.tbll{background: url(images/tb4_l.gif) no-repeat;width:8px}
+.tblbot{background: url(images/tb4_m.gif) repeat-x;width:100%}
+.tblr{background: url(images/tb4_r.gif) no-repeat;width:8px}
+.tbl80{border-collapse:collapse;height:4px;width:80%}
